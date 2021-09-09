@@ -1,9 +1,10 @@
-import { IsEmail, IsNumber, IsOptional, IsString } from "class-validator";
+import { IsEmail, IsNumber, IsOptional, IsString, Length } from "class-validator";
 
 export class NewInfo {
 
     @IsString()
     @IsOptional()
+    @Length(4, 12)
     username: string;
 
     @IsString()
