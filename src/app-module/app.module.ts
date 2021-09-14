@@ -8,7 +8,6 @@ import { MoleculerModule } from 'nestjs-moleculer';
   imports: [
     MoleculerModule.forRoot({
       transporter: "NATS",
-      // hotReload: true, // hotReload feature from moleculer will not work 
   })
   ],
   controllers: [AppController],
