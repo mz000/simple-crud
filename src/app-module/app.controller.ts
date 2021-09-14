@@ -1,5 +1,5 @@
 import { Controller, Res, Body, Get, Param, Post, Put, Delete, UsePipes, ValidationPipe } from '@nestjs/common';
-import { AppService } from './app.service';
+import { AppService } from './services/app.service';
 import { UserInfo } from './dto/user-info.dto'
 import { NewInfo } from './dto/user-new-info.dto'
 
