@@ -7,7 +7,7 @@ import { MoleculerModule } from 'nestjs-moleculer';
 @Module({
   imports: [
     MoleculerModule.forRoot({
-      transporter: "NATS",
+      transporter: "nats://nats:4222",
   })
   ],
   controllers: [AppController],
